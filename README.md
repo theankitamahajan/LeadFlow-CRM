@@ -314,6 +314,17 @@ git remote add origin https://github.com/theankitamahajan/LeadFlow-CRM-Salesforc
 # Push
 git push -u origin main
 
+----
+Note: Create the empty repository on GitHub first (do not initialize with README).
+
+How to Test the Complete Solution
+
+Create a new Lead with high Company Size + C-Level title → Score should be ≥ 70
+Confirm High Value Lead checkbox is checked
+Confirm a Task was created
+Confirm SLA Due Date is set
+Fill First Contact Date → SLA Status should change to Completed
+Open the Sales Leadership Dashboard and verify data appears
 
 
 
