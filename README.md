@@ -2,7 +2,69 @@
 A complete, production-style Salesforce Sales Cloud solution that combines lead capture, scoring, SLA tracking, automation, security, and reporting into one cohesive system.  ---
 # LeadFlow CRM – Complete Lead-to-Opportunity Management System
 
-**Salesforce Administrator Portfolio Project | 2026**
+**LeadFlow CRM** was built to solve a real business problem: a mid-size B2B company was losing high-value leads because of slow follow-up, lack of prioritization, and no visibility for managers.
+
+This project brings together **nine separate Salesforce configuration areas** into one unified, professional solution.
+
+| Area | What Was Implemented |
+|------|----------------------|
+| Lead Capture | Web-to-Lead form with custom fields |
+| Lead Enrichment & Segmentation | Custom fields + Lead Segment |
+| Lead Scoring | Automated scoring logic |
+| High-Value Lead Identification | Automatic flagging of high-value leads |
+| SLA Tracking | Due dates + status tracking |
+| Workflow Automation | Three Record-Triggered Flows |
+| Security Model | Roles, Profiles, Permission Sets, Sharing Rules |
+| Contact & Account Management | Standard + enhanced relationships |
+| Reporting & Dashboards | Executive dashboard + operational reports |
+
+---
+
+## Business Problem
+
+- Sales team was tracking leads in spreadsheets
+- High-value leads were not prioritized
+- No SLA enforcement for first contact
+- Managers had zero real-time visibility
+- Marketing could not measure which sources converted best
+
+---
+
+## Solution Delivered
+
+A fully configured Salesforce org that:
+
+- Captures leads automatically from the website
+- Scores and prioritizes every lead
+- Flags high-value leads and enforces a 4-hour SLA
+- Creates tasks and sends email alerts automatically
+- Restricts data access based on role
+- Gives managers a clear dashboard of pipeline health and SLA compliance
+
+---
+
+
+Skills Demonstrated
+
+Salesforce Administration
+Data Modeling (Custom Fields, Relationships, Validation Rules)
+Flow Builder (Record-Triggered Flows)
+Security Architecture (Roles, Profiles, Permission Sets, OWD, Sharing Rules)
+Reports & Dashboards
+Web-to-Lead
+Business Process Design
+Documentation & Portfolio Presentation
+
+
+Complete Step-by-Step Setup Guide (All 9 Phases)
+Follow these phases in order inside a free Salesforce Developer Edition org.
+Phase 0 – Create Your Salesforce Org
+
+Go to https://developer.salesforce.com/signup
+Sign up for a free Developer Edition
+Verify your email and log in
+Switch to Lightning Experience if needed
+
 
 A complete, production-style Salesforce Sales Cloud solution that combines lead capture, scoring, SLA tracking, automation, security, and reporting into one cohesive system.
 
@@ -252,75 +314,7 @@ git remote add origin https://github.com/theankitamahajan/LeadFlow-CRM-Salesforc
 # Push
 git push -u origin main
 
-# LeadFlow CRM – Complete Lead-to-Opportunity Management System
 
-**Salesforce Administrator Portfolio Project | 2026**
 
-A complete, production-style Salesforce Sales Cloud solution that combines lead capture, scoring, SLA tracking, automation, security, and reporting into one cohesive system.
 
----
 
-## Project Overview
-
-**LeadFlow CRM** was built to solve a real business problem: a mid-size B2B company was losing high-value leads because of slow follow-up, lack of prioritization, and no visibility for managers.
-
-This project brings together **nine separate Salesforce configuration areas** into one unified, professional solution.
-
-| Area | What Was Implemented |
-|------|----------------------|
-| Lead Capture | Web-to-Lead form with custom fields |
-| Lead Enrichment & Segmentation | Custom fields + Lead Segment |
-| Lead Scoring | Automated scoring logic |
-| High-Value Lead Identification | Automatic flagging of high-value leads |
-| SLA Tracking | Due dates + status tracking |
-| Workflow Automation | Three Record-Triggered Flows |
-| Security Model | Roles, Profiles, Permission Sets, Sharing Rules |
-| Contact & Account Management | Standard + enhanced relationships |
-| Reporting & Dashboards | Executive dashboard + operational reports |
-
----
-
-## Business Problem
-
-- Sales team was tracking leads in spreadsheets
-- High-value leads were not prioritized
-- No SLA enforcement for first contact
-- Managers had zero real-time visibility
-- Marketing could not measure which sources converted best
-
----
-
-## Solution Delivered
-
-A fully configured Salesforce org that:
-
-- Captures leads automatically from the website
-- Scores and prioritizes every lead
-- Flags high-value leads and enforces a 4-hour SLA
-- Creates tasks and sends email alerts automatically
-- Restricts data access based on role
-- Gives managers a clear dashboard of pipeline health and SLA compliance
-
----
-
-## System Architecture
-
-### High-Level Architecture
-
-```mermaid
-flowchart TB
-    A[Website Visitor] -->|Fills Form| B[Web-to-Lead]
-    B --> C[Lead Record Created]
-    C --> D[Record-Triggered Flow 1<br/>Lead Scoring]
-    D --> E{Lead Score ≥ 70?}
-    E -->|Yes| F[Mark as High-Value Lead]
-    E -->|No| G[Normal Lead]
-    F --> H[Set SLA Due Date<br/>+ SLA Status = On Track]
-    H --> I[Record-Triggered Flow 2<br/>Create Task + Email Alert]
-    I --> J[Sales Rep Receives Task]
-    J --> K[Sales Rep Contacts Lead]
-    K --> L[First Contact Date Updated]
-    L --> M[Record-Triggered Flow 3<br/>SLA Status = Completed]
-    C --> N[Reports & Dashboard]
-    F --> N
-    M --> N
