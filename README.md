@@ -118,6 +118,8 @@ After creating each field, add it to the **Lead Page Layout**.
 **Path:** Setup → Roles → Set Up Roles
 
 Create this hierarchy:
+
+
 CEO
 └── VP Sales
 ├── Sales Manager - East
@@ -126,6 +128,8 @@ CEO
 └── Sales Manager - West
 ├── Sales Associate West 1
 └── Sales Associate West 2
+
+
 text#### 3.2 Profiles
 Clone the **Standard User** profile three times:
 - `Sales Manager`
