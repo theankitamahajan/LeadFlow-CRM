@@ -1,70 +1,6 @@
-# LeadFlow-CRM
-A complete, production-style Salesforce Sales Cloud solution that combines lead capture, scoring, SLA tracking, automation, security, and reporting into one cohesive system.  ---
 # LeadFlow CRM – Complete Lead-to-Opportunity Management System
 
-**LeadFlow CRM** was built to solve a real business problem: a mid-size B2B company was losing high-value leads because of slow follow-up, lack of prioritization, and no visibility for managers.
-
-This project brings together **nine separate Salesforce configuration areas** into one unified, professional solution.
-
-| Area | What Was Implemented |
-|------|----------------------|
-| Lead Capture | Web-to-Lead form with custom fields |
-| Lead Enrichment & Segmentation | Custom fields + Lead Segment |
-| Lead Scoring | Automated scoring logic |
-| High-Value Lead Identification | Automatic flagging of high-value leads |
-| SLA Tracking | Due dates + status tracking |
-| Workflow Automation | Three Record-Triggered Flows |
-| Security Model | Roles, Profiles, Permission Sets, Sharing Rules |
-| Contact & Account Management | Standard + enhanced relationships |
-| Reporting & Dashboards | Executive dashboard + operational reports |
-
----
-
-## Business Problem
-
-- Sales team was tracking leads in spreadsheets
-- High-value leads were not prioritized
-- No SLA enforcement for first contact
-- Managers had zero real-time visibility
-- Marketing could not measure which sources converted best
-
----
-
-## Solution Delivered
-
-A fully configured Salesforce org that:
-
-- Captures leads automatically from the website
-- Scores and prioritizes every lead
-- Flags high-value leads and enforces a 4-hour SLA
-- Creates tasks and sends email alerts automatically
-- Restricts data access based on role
-- Gives managers a clear dashboard of pipeline health and SLA compliance
-
----
-
-
-Skills Demonstrated
-
-Salesforce Administration
-Data Modeling (Custom Fields, Relationships, Validation Rules)
-Flow Builder (Record-Triggered Flows)
-Security Architecture (Roles, Profiles, Permission Sets, OWD, Sharing Rules)
-Reports & Dashboards
-Web-to-Lead
-Business Process Design
-Documentation & Portfolio Presentation
-
-
-Complete Step-by-Step Setup Guide (All 9 Phases)
-Follow these phases in order inside a free Salesforce Developer Edition org.
-Phase 0 – Create Your Salesforce Org
-
-Go to https://developer.salesforce.com/signup
-Sign up for a free Developer Edition
-Verify your email and log in
-Switch to Lightning Experience if needed
-
+**Salesforce Administrator Portfolio Project | 2026**
 
 A complete, production-style Salesforce Sales Cloud solution that combines lead capture, scoring, SLA tracking, automation, security, and reporting into one cohesive system.
 
@@ -76,17 +12,17 @@ A complete, production-style Salesforce Sales Cloud solution that combines lead 
 
 This project brings together **nine separate Salesforce configuration areas** into one unified, professional solution.
 
-| Area | What Was Implemented |
-|------|----------------------|
-| Lead Capture | Web-to-Lead form with custom fields |
-| Lead Enrichment & Segmentation | Custom fields + Lead Segment |
-| Lead Scoring | Automated scoring logic |
-| High-Value Lead Identification | Automatic flagging of high-value leads |
-| SLA Tracking | Due dates + status tracking |
-| Workflow Automation | Three Record-Triggered Flows |
-| Security Model | Roles, Profiles, Permission Sets, Sharing Rules |
-| Contact & Account Management | Standard + enhanced relationships |
-| Reporting & Dashboards | Executive dashboard + operational reports |
+| Area                           | What Was Implemented                            |
+| ------------------------------ | ----------------------------------------------- |
+| Lead Capture                   | Web-to-Lead form with custom fields             |
+| Lead Enrichment & Segmentation | Custom fields + Lead Segment                    |
+| Lead Scoring                   | Automated scoring logic                         |
+| High-Value Lead Identification | Automatic flagging of high-value leads          |
+| SLA Tracking                   | Due dates + status tracking                     |
+| Workflow Automation            | Three Record-Triggered Flows                    |
+| Security Model                 | Roles, Profiles, Permission Sets, Sharing Rules |
+| Contact & Account Management   | Standard + enhanced relationships               |
+| Reporting & Dashboards         | Executive dashboard + operational reports       |
 
 ---
 
@@ -145,16 +81,16 @@ Follow these phases in order inside a free **Salesforce Developer Edition** org.
 
 Create the following fields:
 
-| Field Label          | Type       | Values / Notes |
-|----------------------|------------|--------------|
-| Company Size         | Picklist   | 1-10, 11-50, 51-200, 201-1000, 1000+ |
-| Job Title Level      | Picklist   | C-Level, VP / Director, Manager, Individual Contributor |
-| Lead Score           | Number     | Length 3, Decimal Places 0 |
-| High Value Lead      | Checkbox   | Default = Unchecked |
-| SLA Status           | Picklist   | On Track, At Risk, Breached, Completed |
-| SLA Due Date         | Date/Time  | - |
-| First Contact Date   | Date/Time  | - |
-| Lead Segment         | Picklist   | Enterprise, Mid-Market, SMB |
+| Field Label        | Type      | Values / Notes                                          |
+| ------------------ | --------- | ------------------------------------------------------- |
+| Company Size       | Picklist  | 1-10, 11-50, 51-200, 201-1000, 1000+                    |
+| Job Title Level    | Picklist  | C-Level, VP / Director, Manager, Individual Contributor |
+| Lead Score         | Number    | Length 3, Decimal Places 0                              |
+| High Value Lead    | Checkbox  | Default = Unchecked                                     |
+| SLA Status         | Picklist  | On Track, At Risk, Breached, Completed                  |
+| SLA Due Date       | Date/Time | -                                                       |
+| First Contact Date | Date/Time | -                                                       |
+| Lead Segment       | Picklist  | Enterprise, Mid-Market, SMB                             |
 
 After creating each field, add it to the **Lead Page Layout**.
 
@@ -190,7 +126,7 @@ CEO
 └── Sales Manager - West
 ├── Sales Associate West 1
 └── Sales Associate West 2
-#### 3.2 Profiles
+text#### 3.2 Profiles
 Clone the **Standard User** profile three times:
 - `Sales Manager`
 - `Sales Associate`
@@ -313,8 +249,6 @@ git remote add origin https://github.com/theankitamahajan/LeadFlow-CRM-Salesforc
 
 # Push
 git push -u origin main
-
-----
 Note: Create the empty repository on GitHub first (do not initialize with README).
 
 How to Test the Complete Solution
@@ -325,7 +259,4 @@ Confirm a Task was created
 Confirm SLA Due Date is set
 Fill First Contact Date → SLA Status should change to Completed
 Open the Sales Leadership Dashboard and verify data appears
-
-
-
 
